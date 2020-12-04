@@ -13,6 +13,15 @@ body {
     justify-content: center;
     flex-direction: column;
     margin-top: 90px;
+    align-items: center;
+}
+
+.img-wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    padding-top: 3%
 }
 
 .inner-container {
@@ -22,9 +31,10 @@ body {
 .item {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    margin: 5%;
+    margin-top: 5%;
     background-color: rgb(136, 136, 136);
     color: rgb(0, 0, 0);
+    width: fit-content;
 }
 
 .item h3 {
@@ -40,13 +50,12 @@ body {
 }
 
 .item img {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 3%
+    width: 100%;
 }
 
 .card-container {
     padding: 2px 16px;
+    width: 580px;
 }
 
 .header {
@@ -68,9 +77,10 @@ body {
     }
 
     .item {
-        flex: 50%;
+        /* flex: 50%; */
         border-color: black;
         border-radius: 10px;
+        margin: 5%;
     }
 }
 
@@ -83,7 +93,9 @@ body {
     <div class="container">
         <div class="inner-container">
             <div class="item">
-                <img src="./assets/pictures/allipc.jpg">
+                <div class="img-wrapper">
+                    <img src="./assets/pictures/allipc.jpg">
+                </div>
                 <div class="card-container">
                     <h3>Koalli’s Computer</h3>
                     <p>
@@ -107,8 +119,10 @@ body {
                 </div>
             </div>
             <div class="item">
-                
-                <img src="./assets/pictures/timpc.jpg">
+                <div class="img-wrapper">
+                    <img src="./assets/pictures/timpc.jpg">
+                </div>
+
                 <div class="card-container">
                     <h3>TimmyTree’s Computer</h3>
                     <p>
@@ -123,7 +137,7 @@ body {
                         <b>Peripherals</b> <br>
                         Headphones: Sony WH-1000XM3<br>
                         Microphone: Samson G-Track Pro<br>
-                        Keyboard: Ducky One 2 Mini<br>
+                        Keyboard: Ducky One 2 Mini (MX Blue switches)<br>
                         Mouse: Logitech G Pro Wireless<br>
                         Mousepad: Logitech G840 XL<br>
                         Monitor #1: Dell S2716DG 27 inch (2560x1440p 144hz)<br>
